@@ -1,0 +1,90 @@
+#header {
+  #navbar {
+    .sidebar__xs {
+      .sidebar__general__config {
+        &.discover__sidebar--hide,
+        &.shopping__sidebar--hide,
+        &.owner__sidebar--hide {
+          display: none;
+        }
+        position: relative;
+        background-color: $color-grey-5;
+        height: 100vh;
+        width: 100%;
+        z-index: 101;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .sidebar__header {
+          background-color: $color-white;
+          position: relative;
+          h3 {
+            @include text($font-size-1, $font-weight-500, $color-blue-100);
+            text-align: center;
+            padding: $pd-2 0;
+            margin: 0;
+          }
+          .btn--back {
+            position: absolute;
+            padding: $pd-2 $pd-5 $pd-2 $pd-2;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            i {
+              color: $color-blue-100;
+            }
+          }
+        }
+        .sidebar__content {
+          background-color: $color-grey-5;
+          ul {
+            padding: 0;
+            li {
+              list-style: none;
+              padding: 0;
+              margin: 0 $mg-2;
+              &:not(:last-child) {
+                border-bottom: $border-3;
+              }
+              a {
+                display: block;
+                @include text(
+                  $font-size-html + 3,
+                  $font-weight-500,
+                  $color-dark-blue-100
+                );
+                padding: $pd-2 0;
+              }
+              i {
+                font-size: $font-size-1;
+                color: $color-dark-blue-100;
+              }
+            }
+          }
+        }
+        .sidebar__social {
+          padding: $pd-4 0;
+          width: 90%;
+          margin: auto;
+          background-color: $color-grey-5;
+          i {
+            font-size: $font-size-1 - 0.1;
+            text-align: center;
+            color: white;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            @media screen and (max-width: 375px) {
+              font-size: $font-size-1 - 0.4;
+              height: 25px;
+              width: 25px;
+              line-height: 25px;
+            }
+            border-radius: 50%;
+            background-color: $color-blue-100;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+#header {
+  @media screen and (max-width: 1200px) {
+    #vehicle {
+      .container__config {
+        .vehicle__content {
+          .vehicle__navbar {
+            ul {
+              li {
+                a {
+                  font-size: $font-size-1 - 0.2;
+                  padding: $pd-1 $pd-1 + 4;
+                }
+              }
+            }
+          }
+
+          #vehicle__list {
+            .vehicle__list__content {
+              .vehicle__item {
+                h3 {
+                  font-size: $font-size-1;
+                }
+                .vehicle__detail {
+                  h4 {
+                    font-size: $font-size-2;
+                  }
+                  p {
+                    font-size: $font-size-1 -0.2;
+                  }
+                }
+                button {
+                  padding: $pd-1 $pd-3 - 5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#our-vehicle {
+  @media screen and (max-width: 1150px) {
+    #vehicle__slider {
+      .carousel-indicators--config {
+        width: 80%;
+        margin: auto;
+      }
+      .carousel-inner--config {
+        .carousel-item {
+          .carousel__caption--config {
+            width: 40%;
+            top: 10%;
+            p {
+              font-size: $font-size-1 -0.2;
+            }
+            .carousel__detail {
+              h2 {
+                font-size: $font-size-3;
+              }
+            }
+          }
+          .carousel__caption__footer {
+            bottom: 3%;
+            padding: 0 $pd-3;
+
+            a {
+              font-size: $font-size-1 - 0.2;
+              i {
+                padding-left: $pd-1;
+              }
+            }
+            img {
+              width: 50%;
+            }
+          }
+        }
+      }
+      .carousel-control-prev {
+        left: -5px;
+      }
+      .carousel-control-next {
+        right: -5px;
+      }
+    }
+  }
+  @media screen and (min-width: 1151px) and (max-width: 1350px) {
+    #vehicle__slider {
+      .carousel-inner--config {
+        .carousel-item {
+          .carousel__caption__footer {
+            bottom: 2%;
+            padding: 0 $pd-6 - 5;
+
+            a {
+              font-size: $font-size-1 - 0.2;
+              i {
+                padding-left: $pd-1;
+              }
+            }
+            img {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#services {
+  @media screen and (min-width: 992px) and (max-width: 1250px) {
+    .services__container--config {
+      padding: $mg-5 6.5%;
+      .service__item {
+        height: 300px;
+        padding: $pd-5 $pd-3;
+        i {
+          font-size: $font-size-5;
+        }
+        h3 {
+          font-size: $font-size-1;
+        }
+        p {
+          font-size: $font-size-1 - 0.2;
+        }
+      }
+    }
+  }
+}
+
+#discover-honda {
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .discover__container--config {
+      h1 {
+        font-size: $font-size-5 + 1;
+      }
+      .discover__item {
+        height: 400px;
+        .discover__item__content {
+          bottom: 12%;
+          h3 {
+            padding: 0 $pd-2;
+            font-size: $font-size-1;
+          }
+          p {
+            font-size: $font-size-1 - 0.2;
+          }
+        }
+      }
+      .discover__item-6 {
+        .item-6__twitter__content {
+          top: 25%;
+          & > p {
+            font-size: $font-size-1 - 0.2;
+            padding-right: $pd-2;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  @media screen and (min-width: 992px) and (max-width: 1250px) {
+    #footer__brand {
+      padding: $pd-2 0;
+      .footer__brand__copyright {
+        font-size: $font-size-1 - 0.1;
+      }
+      .footer__brand__link {
+        margin: $mg-1 + 5 0;
+        ul {
+          justify-content: flex-end;
+          width: 100%;
+          li {
+            padding: 0 $pd-1;
+            a {
+              font-size: $font-size-1 - 0.2;
+            }
+          }
+        }
+      }
+      .footer__brand__logo {
+        padding: $pd-5 $pd-5 0;
+        img {
+          height: 38px;
+        }
+      }
+    }
+  }
+}

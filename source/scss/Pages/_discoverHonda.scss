@@ -1,0 +1,137 @@
+#discover-honda {
+  background-color: $color-grey;
+  padding: $pd-6 0;
+  .discover__container--config {
+    padding: 0 6.5% $pd-6;
+    h1 {
+      text-align: center;
+      @include text($font-size-4, $font-weight-300, $color-dark-blue-200);
+    }
+    p {
+      text-align: center;
+      @include text($font-size-1, $font-weight-300, $color-dark-blue-200);
+    }
+    .discover__item {
+      background-color: $color-white;
+      background-clip: content-box;
+      margin-top: $mg-3;
+      padding: 0 $pd-2;
+      height: 450px;
+      .discover__item--shadow {
+        height: 100%;
+        width: 100%;
+        box-shadow: $box-shadow-3;
+        position: relative;
+      }
+      .discover__item__content {
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        h3 {
+          font-weight: $font-weight-bold;
+          color: $color-dark-blue-200;
+          margin-bottom: $mg-2;
+          padding: 0 $pd-2;
+        }
+        p {
+          padding: 0 $pd-3;
+          margin-bottom: $mg-2;
+        }
+        a {
+          @include text($font-size-1, $font-weight-bold, $color-blue-200);
+        }
+      }
+    }
+    .discover__item-6 {
+      position: relative;
+      .twitter__logo {
+        font-size: $font-size-3;
+        color: $color-blue-200;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .item-6__twitter__content {
+        position: absolute;
+        left: 5%;
+        top: 30%;
+        .item-6__twitter__user {
+          margin-bottom: $mg-2;
+          img {
+            border-radius: 5px;
+            margin-right: $mg-1 + 5;
+          }
+          p {
+            margin-bottom: 0;
+            a {
+              display: block;
+              @include text($font-size-1, $font-weight-bold, $color-blue-200);
+              &:last-child {
+                font-weight: $font-weight-normal;
+              }
+            }
+          }
+        }
+        & > p {
+          text-align: left;
+          a {
+            color: $color-blue-200;
+          }
+        }
+
+        & > a {
+          @include text($font-size-1, $font-weight-300, $color-blue-200);
+          display: block;
+          margin-bottom: $mg-2;
+        }
+        .item-6__interaction {
+          span {
+            @include text($font-size-1, $font-weight-normal, $color-blue-200);
+            margin-right: $mg-1 + 5;
+          }
+        }
+      }
+    }
+    .discover__more {
+      padding: $mg-5 0 0;
+    }
+  }
+  .discover__search {
+    .search__content {
+      margin: 0 6.5%;
+      padding: $pd-1 $pd-6;
+      border-radius: 40px;
+      background-color: $color-white;
+      box-shadow: inset 2px 2px 5px 0 $color-grey-6;
+      .search__input {
+        flex-grow: 1;
+        color: $color-blue-200;
+        i {
+          font-size: $font-size-2;
+          margin-top: $mg-1;
+          margin-right: $mg-1;
+        }
+        input {
+          flex-grow: 1;
+          @include text($font-size-2, $font-weight-300, $color-blue-200);
+          height: 3.5rem;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          &::placeholder {
+            color: $color-blue-200;
+          }
+        }
+      }
+      .search__button {
+        .btn--search {
+          font-size: $font-size-1 - 0.2;
+          padding: $pd-1 - 2 $pd-2 - 2;
+          box-shadow: 2px 2px 5px 0 $color-grey-6;
+        }
+      }
+    }
+  }
+}

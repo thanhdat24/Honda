@@ -1,0 +1,34 @@
+#services {
+  background-color: $color-grey;
+  .services__container--config {
+    padding: $mg-6 6.5% $mg-5;
+    .service__item {
+      height: 350px;
+      background-color: $color-white;
+      box-shadow: $box-shadow-3;
+      border-radius: 10px;
+      padding: $pd-6 $pd-5;
+      transition: all 0.3s;
+      margin-bottom: $mg-3;
+      &:hover {
+        transform: translateY(-20px);
+      }
+      i {
+        font-size: $font-size-4;
+        color: $color-dark-blue-200;
+        margin-bottom: $mg-4;
+      }
+      h3 {
+        @include text($font-size-2, $font-weight-bold, $color-dark-blue-200);
+      }
+      p {
+        @include text($font-size-1, $font-weight-300, $color-dark-blue-200);
+        margin-bottom: $mg-2;
+      }
+      button {
+        padding: $pd-1 $pd-2;
+      }
+    }
+  }
+}
+// }

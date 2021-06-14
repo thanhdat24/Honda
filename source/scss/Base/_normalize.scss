@@ -1,0 +1,106 @@
+// Mcustomscrollbar config
+.mCSB_scrollTools {
+  right: -5px;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: $mg-2;
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
+}
+#mCSB_1_scrollbar_vertical {
+  @media screen and (max-width: 768px) {
+    visibility: hidden;
+  }
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger {
+  .mCSB_dragger_bar {
+    background-color: rgba(0, 68, 106, 0.75);
+  }
+  &:hover .mCSB_dragger_bar {
+    background-color: rgba(0, 68, 106, 0.9);
+  }
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools
+  .mCSB_dragger.mCSB_dragger_onDrag
+  .mCSB_dragger_bar {
+  background-color: rgba(0, 68, 106, 0.9);
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: rgba(0, 68, 106, 0.2);
+}
+
+// Animated configuration
+#header {
+  .animate__animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -30%, 0);
+      transform: translate3d(0, -30%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 20%, 0);
+      transform: translate3d(0, 20%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 20%, 0);
+      transform: translate3d(0, 20%, 0);
+    }
+  }
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -30%, 0);
+      transform: translate3d(0, -30%, 0);
+    }
+  }
+  @keyframes fadeOutRight {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(20%, 0, 0);
+      transform: translate3d(20%, 0, 0);
+    }
+  }
+}
+
+.row {
+  margin: 0;
+}

@@ -1,0 +1,53 @@
+#carousel {
+  height: 750px;
+  margin-top: $mg-5 - 3;
+  background-color: $color-dark-blue-200;
+  .swiper-config {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    .swiper-wrapper {
+      height: 90%;
+      .swiper-slide {
+        height: 100%;
+      }
+    }
+    .swiper-pagination {
+      bottom: 20px;
+      .swiper-pagination-bullet {
+        height: 12px;
+        width: 12px;
+        background-color: $color-blue-100;
+        outline: none;
+      }
+    }
+
+    .swiper-button-config {
+      padding: $pd-6 $pd-5;
+      background-color: $color-dark-white;
+      top: 45%;
+      transform: translateY(-50%);
+      transition: all 0.2s;
+      &:active {
+        color: $color-white;
+        background-color: $color-blue-overlay;
+        outline: none;
+      }
+    }
+    .swiper-button-prev {
+      border-radius: 0 0.9rem 0.9rem 0;
+      left: -0.8rem;
+    }
+    .swiper-button-next {
+      border-radius: 0.9rem 0 0 0.9rem;
+      right: -0.8rem;
+    }
+    .swiper-button-explore {
+      position: absolute;
+      left: 50%;
+      z-index: 1;
+      bottom: 20%;
+      transform: translateX(-50%);
+    }
+  }
+}

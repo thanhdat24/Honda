@@ -1,0 +1,29 @@
+@mixin text($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin btnCreate(
+  $fs,
+  $fw,
+  $color,
+  $bg,
+  $pd,
+  $border,
+  $color-hover,
+  $bg-hover,
+  $border-hover
+) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+  background-color: $bg;
+  padding: $pd;
+  border: 2px solid $border;
+  &:hover {
+    color: $color-hover;
+    background-color: $bg-hover;
+    border-color: $border-hover;
+  }
+}

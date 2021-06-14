@@ -1,0 +1,28 @@
+{
+  "name": "honda",
+  "version": "1.0.0",
+  "description": "Honda website clone project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Vtquan123/honda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Vtquan123/honda/issues"
+  },
+  "homepage": "https://gitlab.com/Vtquan123/honda#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "popper.js": "^1.16.1",
+    "swiper": "^6.3.5",
+    "wow.js": "^1.2.2"
+  }
+}

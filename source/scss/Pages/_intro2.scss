@@ -1,0 +1,57 @@
+#intro-2 {
+  background-color: $color-grey;
+  .intro__container {
+    padding: 0 6.5%;
+    .intro__item {
+      height: 350px;
+      margin-bottom: $mg-2;
+      position: relative;
+    }
+    .intro__left__content,
+    .intro__right__content {
+      padding: 0 $pd-2;
+      margin-bottom: $mg-2;
+    }
+
+    button {
+      padding: $pd-1 $pd-2;
+    }
+    .intro__left {
+      background: url("../img/intro-3.jpg") no-repeat center;
+      background-size: cover;
+      background-clip: content-box;
+    }
+    .intro__right {
+      background: url("../img/intro-4.jpg") no-repeat center;
+      background-size: cover;
+      background-clip: content-box;
+    }
+    .intro__content {
+      text-align: center;
+      color: $color-white;
+      width: 90%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 8%;
+      h3 {
+        font-size: $font-size-2;
+        font-weight: $font-weight-bold;
+        margin-bottom: $mg-2;
+      }
+      p {
+        font-size: $font-size-1;
+        font-weight: $font-weight-300;
+        margin-bottom: $mg-3;
+      }
+      button {
+        background-color: $color-orange;
+        border-color: $color-orange;
+        &:hover {
+          color: $color-orange;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3187 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 12px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #00324f;
+}
+
+body .container-fluid--config {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.mCSB_scrollTools {
+  right: -5px;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mCSB_1_scrollbar_vertical {
+    visibility: hidden;
+  }
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: rgba(0, 68, 106, 0.75);
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: rgba(0, 68, 106, 0.9);
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools
+.mCSB_dragger.mCSB_dragger_onDrag
+.mCSB_dragger_bar {
+  background-color: rgba(0, 68, 106, 0.9);
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: rgba(0, 68, 106, 0.2);
+}
+
+#header .animate__animated {
+  animation-duration: 0.3s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -30%, 0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(20%, 0, 0);
+  }
+}
+
+.row {
+  margin: 0;
+}
+
+#vehicle__list .vehicle__item #img-1 {
+  background: linear-gradient(#bbbdc0, #f5f5f5);
+  border-radius: 5px;
+}
+
+#vehicle__list .vehicle__item:hover #img-1 {
+  background: linear-gradient(#3c4c5c, #f5f5f5, #f5f5f5);
+}
+
+#vehicle__list .vehicle__item.delay-1 {
+  animation-delay: 0.1s;
+}
+
+#vehicle__list .vehicle__item #img-2 {
+  background: linear-gradient(#bbbdc0, #f5f5f5);
+  border-radius: 5px;
+}
+
+#vehicle__list .vehicle__item:hover #img-2 {
+  background: linear-gradient(#5e5e5e, #f5f5f5, #f5f5f5);
+}
+
+#vehicle__list .vehicle__item.delay-2 {
+  animation-delay: 0.2s;
+}
+
+#vehicle__list .vehicle__item #img-3 {
+  background: linear-gradient(#bbbdc0, #f5f5f5);
+  border-radius: 5px;
+}
+
+#vehicle__list .vehicle__item:hover #img-3 {
+  background: linear-gradient(#14409a, #f5f5f5, #f5f5f5);
+}
+
+#vehicle__list .vehicle__item.delay-3 {
+  animation-delay: 0.3s;
+}
+
+#vehicle__list .vehicle__item #img-4 {
+  background: linear-gradient(#bbbdc0, #f5f5f5);
+  border-radius: 5px;
+}
+
+#vehicle__list .vehicle__item:hover #img-4 {
+  background: linear-gradient(#99454d, #f5f5f5, #f5f5f5);
+}
+
+#vehicle__list .vehicle__item.delay-4 {
+  animation-delay: 0.4s;
+}
+
+#vehicle__list .vehicle__item #img-5 {
+  background: linear-gradient(#bbbdc0, #f5f5f5);
+  border-radius: 5px;
+}
+
+#vehicle__list .vehicle__item:hover #img-5 {
+  background: linear-gradient(#5e5e5e, #f5f5f5, #f5f5f5);
+}
+
+#vehicle__list .vehicle__item.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+#carousel .swiper-config .slide-1 {
+  background: url("../img/banner-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #carousel .swiper-config .slide-1 {
+    background: url("../img/banner-1-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#carousel .swiper-config .slide-2 {
+  background: url("../img/banner-2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #carousel .swiper-config .slide-2 {
+    background: url("../img/banner-2-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#carousel .swiper-config .slide-3 {
+  background: url("../img/banner-3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #carousel .swiper-config .slide-3 {
+    background: url("../img/banner-3-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#carousel .swiper-config .slide-4 {
+  background: url("../img/banner-4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #carousel .swiper-config .slide-4 {
+    background: url("../img/banner-4-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#vehicle__slider .carousel-inner--config .item-1 {
+  background: url("../img/slider-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #vehicle__slider .carousel-inner--config .item-1 {
+    background: url("../img/slider-1-xs.jpg") no-repeat;
+    background-position: unset;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #vehicle__slider .carousel-inner--config .item-1 {
+    background: url("../img/slider-1-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#vehicle__slider .carousel-inner--config .item-2 {
+  background: url("../img/slider-2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #vehicle__slider .carousel-inner--config .item-2 {
+    background: url("../img/slider-2-xs.jpg") no-repeat;
+    background-position: unset;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #vehicle__slider .carousel-inner--config .item-2 {
+    background: url("../img/slider-2-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#vehicle__slider .carousel-inner--config .item-3 {
+  background: url("../img/slider-3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #vehicle__slider .carousel-inner--config .item-3 {
+    background: url("../img/slider-3-xs.jpg") no-repeat;
+    background-position: unset;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #vehicle__slider .carousel-inner--config .item-3 {
+    background: url("../img/slider-3-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#vehicle__slider .carousel-inner--config .item-4 {
+  background: url("../img/slider-4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #vehicle__slider .carousel-inner--config .item-4 {
+    background: url("../img/slider-4-xs.jpg") no-repeat;
+    background-position: unset;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #vehicle__slider .carousel-inner--config .item-4 {
+    background: url("../img/slider-4-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#vehicle__slider .carousel-inner--config .item-5 {
+  background: url("../img/slider-5.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #vehicle__slider .carousel-inner--config .item-5 {
+    background: url("../img/slider-5-xs.jpg") no-repeat;
+    background-position: unset;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #vehicle__slider .carousel-inner--config .item-5 {
+    background: url("../img/slider-5-xs.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+#discover-honda .discover__container--config .discover__item-1 {
+  background: url("../img/discover-1.jpg") no-repeat center 0;
+  background-size: 120%;
+}
+
+#discover-honda .discover__container--config .discover__item-2 {
+  background: url("../img/discover-2.jpg") no-repeat center 0;
+  background-size: 120%;
+}
+
+#discover-honda .discover__container--config .discover__item-3 {
+  background: url("../img/discover-3.jpg") no-repeat center 0;
+  background-size: 120%;
+}
+
+#discover-honda .discover__container--config .discover__item-4 {
+  background: url("../img/discover-4.jpg") no-repeat center 0;
+  background-size: 120%;
+}
+
+#discover-honda .discover__container--config .discover__item-5 {
+  background: url("../img/discover-5.jpg") no-repeat center 0;
+  background-size: 120%;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  background-color: #007cc3;
+}
+
+#header #navbar {
+  margin: 0;
+  padding: 0;
+  background-color: #007cc3;
+  max-width: 1600px;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+#header #navbar #header__logo {
+  fill: #fff;
+  height: 33px;
+  width: 49px;
+}
+
+#header #navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+#header #navbar a.navbar-brand__config {
+  padding: 0 25px;
+  margin: 0;
+  border: none;
+}
+
+#header #navbar > a:not(.navbar-brand__config),
+#header #navbar .navbar-collapse__config .nav-link {
+  position: relative;
+}
+
+#header #navbar > a:not(.navbar-brand__config)::before,
+#header #navbar .navbar-collapse__config .nav-link::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+#header #navbar > a:not(.navbar-brand__config).active,
+#header #navbar .navbar-collapse__config .nav-link.active {
+  color: #007cc3;
+}
+
+#header #navbar > a:not(.navbar-brand__config).active .angle__rotate,
+#header #navbar .navbar-collapse__config .nav-link.active .angle__rotate {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+
+#header #navbar > a:not(.navbar-brand__config).active::before,
+#header #navbar .navbar-collapse__config .nav-link.active::before {
+  top: 0;
+}
+
+#header #navbar > a:not(.navbar-brand__config):hover,
+#header #navbar .navbar-collapse__config .nav-link:hover {
+  color: #007cc3;
+}
+
+#header #navbar > a:not(.navbar-brand__config):hover::before,
+#header #navbar .navbar-collapse__config .nav-link:hover::before {
+  top: 0;
+}
+
+#header #navbar > a {
+  border-right: 1px solid #4f91ca;
+}
+
+#header #navbar > a .angle__rotate {
+  font-size: 15px;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+#header #navbar #vehicle-link {
+  border-left: 1px solid #4f91ca;
+}
+
+#header #navbar .navbar-collapse__config {
+  display: block;
+  margin-left: auto;
+}
+
+#header #navbar .navbar-collapse__config ul {
+  margin-left: auto;
+}
+
+#header #navbar .navbar-collapse__config ul .nav-link__language {
+  border-left: 1px solid #4f91ca;
+  border-right: 1px solid #4f91ca;
+}
+
+#footer {
+  padding-top: 30px;
+  background-color: #f5f5f5;
+  box-sizing: content-box;
+}
+
+#footer #footer__menu {
+  padding: 0 6.5% 50px;
+}
+
+#footer #footer__menu .footer__menu__item .footer__title__md {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00324f;
+  margin-bottom: 30px;
+}
+
+#footer #footer__menu .footer__menu__item ul li {
+  margin-bottom: 20px;
+}
+
+#footer #footer__menu .footer__menu__item ul li a {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #2198dc;
+}
+
+#footer #footer__menu .footer__menu__contact {
+  padding: 20px 0;
+  margin-top: 30px;
+  border-top: 0.2rem solid #e5e5e5;
+}
+
+#footer #footer__menu .footer__menu__contact .footer__social h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00324f;
+  margin-bottom: 30px;
+}
+
+#footer #footer__menu .footer__menu__contact .footer__social i {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #007cc3;
+  border-radius: 50%;
+  line-height: 30px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+#footer #footer__menu .footer__menu__contact .footer__form {
+  text-align: right;
+}
+
+#footer #footer__menu .footer__menu__contact .footer__form h3 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #00324f;
+  margin-bottom: 20px;
+}
+
+#footer #footer__brand {
+  background-color: #007cc3;
+  padding: 15px 0;
+}
+
+#footer #footer__brand .footer__brand__copyright {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+#footer #footer__brand .footer__brand__copyright a {
+  font-style: italic;
+  text-decoration: underline;
+  color: #fff;
+}
+
+#footer #footer__brand .footer__brand__link {
+  margin-bottom: 0;
+}
+
+#footer #footer__brand .footer__brand__link ul {
+  justify-content: flex-end;
+}
+
+#footer #footer__brand .footer__brand__link ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+#footer #footer__brand .footer__brand__link ul li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+#footer #footer__brand .footer__brand__link ul li a {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+#footer #footer__brand .footer__brand__logo {
+  padding: 30px 30px 0;
+  width: 100%;
+}
+
+#footer #footer__brand .footer__brand__logo img {
+  display: inline-block;
+  height: 4rem;
+  width: auto;
+}
+
+#header #vehicle {
+  display: block;
+}
+
+#header #vehicle.vehicle--hide {
+  display: none;
+}
+
+#header #vehicle .container__config {
+  padding: 0 6.3% 10px;
+  background-color: rgba(8, 67, 108, 0.8);
+}
+
+#header #vehicle .container__config .vehicle__content {
+  position: relative;
+  box-shadow: 0 9px 15px -5px rgba(0, 0, 0, 0.147), 0 15px 20px -10px rgba(0, 0, 0, 0.33);
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar {
+  text-align: center;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar ul {
+  margin: 0;
+  list-style: none;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar ul li {
+  display: inline-block;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar ul li:last-child a {
+  border: none;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00446a;
+  padding: 6px 25px;
+  border-right: 0.2rem solid #e5e5e5;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar a.active {
+  color: #2198dc;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar a.active::after {
+  width: 90%;
+  background-color: #2198dc;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #2198dc;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.4s;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar a:hover {
+  text-decoration: none;
+  color: #2198dc;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__navbar a:hover::after {
+  width: 90%;
+  background-color: #2198dc;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__content--close {
+  padding: 10px;
+  color: #00446a;
+  background-color: #f5f5f5;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 65px;
+  right: -55px;
+  cursor: pointer;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__content--close .close-icon {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #00446a;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__content--close .close-icon i {
+  font-size: 1.2rem;
+  line-height: 26px;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__content--close p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__content--close:hover {
+  color: #2198dc;
+}
+
+#header #vehicle .container__config .vehicle__content .vehicle__content--close:hover .close-icon {
+  border-color: #2198dc;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list {
+  background-color: #f5f5f5;
+  padding: 30px;
+  margin: 0;
+  max-height: 85vh;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content {
+  padding: 15px 15px 15px 25px;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__title h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #00324f;
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 0 6px;
+  top: -2.7rem;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__title h1 i {
+  font-size: 1.2rem;
+  position: relative;
+  top: -4px;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__title h1 span {
+  font-weight: 300;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item {
+  margin-bottom: 60px;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__item--shadow {
+  padding-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 9px 9px 11.6px -5px rgba(0, 0, 0, 0.047), 5px 12px 20px -10px rgba(0, 0, 0, 0.23);
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__item__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item img:nth-child(2) {
+  display: none;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item:hover img:first-child {
+  display: none;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item:hover img:nth-child(2) {
+  display: block;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00324f;
+  margin-bottom: 5px;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__detail {
+  margin-bottom: 20px;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__detail h4 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: #00324f;
+}
+
+#header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__detail p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #00446a;
+  margin-bottom: 5px;
+}
+
+#header .shopping__dropdown {
+  position: absolute;
+  left: 50px;
+  top: 100%;
+  padding: 14px 24px 36px;
+  background-color: white;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.044), 0 2.8px 2.4px rgba(0, 0, 0, 0.074), 0 6.6px 8.5px rgba(0, 0, 0, 0.109), 0 22px 43px rgba(0, 0, 0, 0.18);
+}
+
+#header .shopping__dropdown.shopping--hide {
+  display: none;
+}
+
+#header .shopping__dropdown a {
+  padding: 0;
+}
+
+#header .shopping__dropdown a::before {
+  display: none;
+}
+
+#header .shopping__dropdown .shopping__tools {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+#header .shopping__dropdown .shopping__tools ul li {
+  list-style: none;
+  text-align: center;
+}
+
+#header .shopping__dropdown .shopping__tools ul li a {
+  color: #00446a;
+  text-decoration: none;
+  display: inline-block;
+  height: 145px;
+  width: 158px;
+  padding: 36px 14px 28px;
+}
+
+#header .shopping__dropdown .shopping__tools ul li a i {
+  font-size: 4rem;
+}
+
+#header .shopping__dropdown .shopping__tools ul li a p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00446a;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+#header .shopping__dropdown .shopping__tools ul li:hover a,
+#header .shopping__dropdown .shopping__tools ul li:hover p {
+  color: #007cc3;
+}
+
+#header .shopping__dropdown .shopping__tools .separator {
+  width: 1px;
+  height: 83px;
+  display: block;
+  border-right: 1px solid #c4c4c4;
+}
+
+#header .shopping__dropdown .shopping__more {
+  padding-top: 30px;
+}
+
+#header .shopping__dropdown .shopping__more .shopping__more__item {
+  padding: 0;
+  text-align: center;
+}
+
+#header .shopping__dropdown .shopping__more .shopping__more__item a {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#header .shopping__dropdown .shopping__more .shopping__more__item a,
+#header .shopping__dropdown .shopping__more .shopping__more__item i {
+  color: #007cc3;
+}
+
+#header .owner__dropdown {
+  width: 45rem;
+  position: absolute;
+  top: 100%;
+  right: 52px;
+  background-color: #fff;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.044), 0 2.8px 2.4px rgba(0, 0, 0, 0.074), 0 6.6px 8.5px rgba(0, 0, 0, 0.109), 0 22px 43px rgba(0, 0, 0, 0.18);
+  padding: 36px 0;
+}
+
+#header .owner__dropdown.owner--hide {
+  display: none;
+}
+
+#header .owner__dropdown .owner__content {
+  width: 45%;
+  padding: 0 35px;
+}
+
+#header .owner__dropdown .owner__content:first-child {
+  width: 55%;
+  border-right: 1px solid #c4c4c4;
+}
+
+#header .owner__dropdown ul {
+  padding: 0;
+}
+
+#header .owner__dropdown ul li {
+  list-style: none;
+  margin-bottom: 17px;
+}
+
+#header .owner__dropdown ul a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007cc3;
+}
+
+#header .discover__dropdown {
+  width: 37rem;
+  padding: 30px;
+  position: absolute;
+  top: 100%;
+  right: 52px;
+  background-color: #fff;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.044), 0 2.8px 2.4px rgba(0, 0, 0, 0.074), 0 6.6px 8.5px rgba(0, 0, 0, 0.109), 0 22px 43px rgba(0, 0, 0, 0.18);
+}
+
+#header .discover__dropdown.discover--hide {
+  display: none;
+}
+
+#header .discover__dropdown .discover__link h3 {
+  font-weight: bold;
+  color: #00324f;
+  margin-bottom: 20px;
+}
+
+#header .discover__dropdown .discover__link ul {
+  padding: 0;
+}
+
+#header .discover__dropdown .discover__link ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+#header .discover__dropdown .discover__link ul a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2198dc;
+  padding: 0;
+}
+
+#header .discover__dropdown .discover__social {
+  margin-top: 30px;
+}
+
+#header .discover__dropdown .discover__social i {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #007cc3;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config {
+  position: relative;
+  background-color: #eee;
+  height: 100vh;
+  width: 100%;
+  z-index: 101;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config.discover__sidebar--hide, #header #navbar .sidebar__xs .sidebar__general__config.shopping__sidebar--hide, #header #navbar .sidebar__xs .sidebar__general__config.owner__sidebar--hide {
+  display: none;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__header {
+  background-color: #fff;
+  position: relative;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__header h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #007cc3;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__header .btn--back {
+  position: absolute;
+  padding: 15px 30px 15px 15px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__header .btn--back i {
+  color: #007cc3;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__content {
+  background-color: #eee;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__content ul {
+  padding: 0;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__content ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0 20px;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__content ul li:not(:last-child) {
+  border-bottom: 1px solid #a8a7a7;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__content ul li a {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #00446a;
+  padding: 15px 0;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__content ul li i {
+  font-size: 1.4rem;
+  color: #00446a;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__social {
+  padding: 25px 0;
+  width: 90%;
+  margin: auto;
+  background-color: #eee;
+}
+
+#header #navbar .sidebar__xs .sidebar__general__config .sidebar__social i {
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #007cc3;
+}
+
+@media screen and (max-width: 375px) {
+  #header #navbar .sidebar__xs .sidebar__general__config .sidebar__social i {
+    font-size: 1rem;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+  }
+}
+
+#carousel {
+  height: 750px;
+  margin-top: 57px;
+  background-color: #00324f;
+}
+
+#carousel .swiper-config {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+#carousel .swiper-config .swiper-wrapper {
+  height: 90%;
+}
+
+#carousel .swiper-config .swiper-wrapper .swiper-slide {
+  height: 100%;
+}
+
+#carousel .swiper-config .swiper-pagination {
+  bottom: 20px;
+}
+
+#carousel .swiper-config .swiper-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: #007cc3;
+  outline: none;
+}
+
+#carousel .swiper-config .swiper-button-config {
+  padding: 50px 30px;
+  background-color: #ffffffe6;
+  top: 45%;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+}
+
+#carousel .swiper-config .swiper-button-config:active {
+  color: #fff;
+  background-color: rgba(8, 67, 108, 0.8);
+  outline: none;
+}
+
+#carousel .swiper-config .swiper-button-prev {
+  border-radius: 0 0.9rem 0.9rem 0;
+  left: -0.8rem;
+}
+
+#carousel .swiper-config .swiper-button-next {
+  border-radius: 0.9rem 0 0 0.9rem;
+  right: -0.8rem;
+}
+
+#carousel .swiper-config .swiper-button-explore {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  bottom: 20%;
+  transform: translateX(-50%);
+}
+
+#intro {
+  background-color: #f5f5f5;
+}
+
+#intro .intro__container {
+  padding: 0 5%;
+}
+
+#intro .intro__container .intro__item {
+  height: 350px;
+  margin-top: -200px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#intro .intro__container .intro__left__content,
+#intro .intro__container .intro__right__content {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+#intro .intro__container button {
+  padding: 6px 15px;
+}
+
+#intro .intro__container .intro__left {
+  background: url("../img/our-vehicle-intro-1.jpg") no-repeat center;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+#intro .intro__container .intro__left .intro__left__content {
+  text-align: center;
+  color: #fff;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8%;
+}
+
+#intro .intro__container .intro__left .intro__left__content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#intro .intro__container .intro__left .intro__left__content p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#intro .intro__container .intro__right {
+  background: url("../img/our-vehicles-intro-2.jpg") no-repeat center;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+#intro .intro__container .intro__right .intro__right__content {
+  position: absolute;
+  bottom: 8%;
+  padding-left: 20px;
+}
+
+#intro .intro__container .intro__right .intro__right__content h3 {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  padding: 6px 15px;
+  background-color: #00446a;
+  margin-bottom: 5px;
+}
+
+#intro .intro__container .intro__right .intro__right__content p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  width: 52%;
+  margin-bottom: 20px;
+}
+
+#our-vehicle {
+  background-color: #f5f5f5;
+  padding-top: 50px;
+}
+
+#our-vehicle h1 {
+  text-align: center;
+  font-size: 5.5rem;
+  font-weight: 300;
+  color: #00446a;
+  margin-bottom: 60px;
+}
+
+#our-vehicle #vehicle__slider {
+  height: 600px;
+  overflow: hidden;
+}
+
+#our-vehicle #vehicle__slider .carousel-indicators--config {
+  top: 0;
+  bottom: unset;
+  width: 70%;
+  height: 3.5rem;
+  margin-bottom: 0;
+}
+
+#our-vehicle #vehicle__slider .carousel-indicators--config li {
+  color: #00446a;
+  text-indent: unset;
+  opacity: 1;
+  width: unset;
+  height: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+#our-vehicle #vehicle__slider .carousel-indicators--config li.active::before {
+  content: "";
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f5f5f5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4rem;
+}
+
+#our-vehicle #vehicle__slider .carousel-indicators--config li span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00324f;
+  padding: 6px 15px;
+  border-radius: 40px;
+}
+
+#our-vehicle #vehicle__slider .carousel-indicators--config li.active span {
+  background-color: #2198dc;
+  color: #fff;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config {
+  height: 95%;
+  padding-top: 15px;
+  margin-top: 50px;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item {
+  height: 95%;
+  position: relative;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config {
+  width: 30%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config h3 {
+  margin-bottom: 20px;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config h3 span {
+  font-weight: 300;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config img {
+  width: 60%;
+  transform: translateX(-5px);
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config p {
+  margin-bottom: 30px;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail p {
+  font-weight: bold;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__caption__button {
+  width: 100%;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__caption__button button:first-child {
+  margin-right: 30px;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  padding: 0 50px;
+  border-top: 1px solid #a8a7a7;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a i {
+  padding-left: 15px;
+}
+
+#our-vehicle #vehicle__slider .carousel-control-next,
+#our-vehicle #vehicle__slider .carousel-control-prev {
+  width: 5%;
+}
+
+#our-vehicle #vehicle__slider .carousel-control-next i,
+#our-vehicle #vehicle__slider .carousel-control-prev i {
+  font-size: 4rem;
+  padding: 15px;
+  background-color: rgba(8, 67, 108, 0.8);
+  position: absolute;
+  top: 50%;
+}
+
+#our-vehicle #vehicle__slider .carousel-control-prev {
+  left: -1.5rem;
+}
+
+#our-vehicle #vehicle__slider .carousel-control-prev i {
+  border-radius: 0 0.9rem 0.9rem 0;
+}
+
+#our-vehicle #vehicle__slider .carousel-control-next {
+  right: -1.5rem;
+}
+
+#our-vehicle #vehicle__slider .carousel-control-next i {
+  border-radius: 0.9rem 0 0 0.9rem;
+}
+
+#services {
+  background-color: #f5f5f5;
+}
+
+#services .services__container--config {
+  padding: 100px 6.5% 60px;
+}
+
+#services .services__container--config .service__item {
+  height: 350px;
+  background-color: #fff;
+  box-shadow: 9px 9px 11.6px -5px rgba(0, 0, 0, 0.047), 5px 12px 20px -10px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  padding: 50px 30px;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+
+#services .services__container--config .service__item:hover {
+  transform: translateY(-20px);
+}
+
+#services .services__container--config .service__item i {
+  font-size: 6rem;
+  color: #00324f;
+  margin-bottom: 45px;
+}
+
+#services .services__container--config .service__item h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00324f;
+}
+
+#services .services__container--config .service__item p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #00324f;
+  margin-bottom: 20px;
+}
+
+#services .services__container--config .service__item button {
+  padding: 6px 15px;
+}
+
+#intro-2 {
+  background-color: #f5f5f5;
+}
+
+#intro-2 .intro__container {
+  padding: 0 6.5%;
+}
+
+#intro-2 .intro__container .intro__item {
+  height: 350px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#intro-2 .intro__container .intro__left__content,
+#intro-2 .intro__container .intro__right__content {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+#intro-2 .intro__container button {
+  padding: 6px 15px;
+}
+
+#intro-2 .intro__container .intro__left {
+  background: url("../img/intro-3.jpg") no-repeat center;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+#intro-2 .intro__container .intro__right {
+  background: url("../img/intro-4.jpg") no-repeat center;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+#intro-2 .intro__container .intro__content {
+  text-align: center;
+  color: #fff;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8%;
+}
+
+#intro-2 .intro__container .intro__content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#intro-2 .intro__container .intro__content p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#intro-2 .intro__container .intro__content button {
+  background-color: #ff4040;
+  border-color: #ff4040;
+}
+
+#intro-2 .intro__container .intro__content button:hover {
+  color: #ff4040;
+  background-color: #fff;
+}
+
+#discover-honda {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+#discover-honda .discover__container--config {
+  padding: 0 6.5% 50px;
+}
+
+#discover-honda .discover__container--config h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 300;
+  color: #00324f;
+}
+
+#discover-honda .discover__container--config p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #00324f;
+}
+
+#discover-honda .discover__container--config .discover__item {
+  background-color: #fff;
+  background-clip: content-box;
+  margin-top: 30px;
+  padding: 0 15px;
+  height: 450px;
+}
+
+#discover-honda .discover__container--config .discover__item .discover__item--shadow {
+  height: 100%;
+  width: 100%;
+  box-shadow: 9px 9px 11.6px -5px rgba(0, 0, 0, 0.047), 5px 12px 20px -10px rgba(0, 0, 0, 0.23);
+  position: relative;
+}
+
+#discover-honda .discover__container--config .discover__item .discover__item__content {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+#discover-honda .discover__container--config .discover__item .discover__item__content h3 {
+  font-weight: bold;
+  color: #00324f;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+#discover-honda .discover__container--config .discover__item .discover__item__content p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+#discover-honda .discover__container--config .discover__item .discover__item__content a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2198dc;
+}
+
+#discover-honda .discover__container--config .discover__item-6 {
+  position: relative;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .twitter__logo {
+  font-size: 2.4rem;
+  color: #2198dc;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content .item-6__twitter__user {
+  margin-bottom: 20px;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content .item-6__twitter__user img {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content .item-6__twitter__user p {
+  margin-bottom: 0;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content .item-6__twitter__user p a {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2198dc;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content .item-6__twitter__user p a:last-child {
+  font-weight: normal;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content > p {
+  text-align: left;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content > p a {
+  color: #2198dc;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content > a {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #2198dc;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content .item-6__interaction span {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #2198dc;
+  margin-right: 10px;
+}
+
+#discover-honda .discover__container--config .discover__more {
+  padding: 60px 0 0;
+}
+
+#discover-honda .discover__search .search__content {
+  margin: 0 6.5%;
+  padding: 6px 50px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+#discover-honda .discover__search .search__content .search__input {
+  flex-grow: 1;
+  color: #2198dc;
+}
+
+#discover-honda .discover__search .search__content .search__input i {
+  font-size: 1.8rem;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#discover-honda .discover__search .search__content .search__input input {
+  flex-grow: 1;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #2198dc;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#discover-honda .discover__search .search__content .search__input input::placeholder {
+  color: #2198dc;
+}
+
+#discover-honda .discover__search .search__content .search__button .btn--search {
+  font-size: 1.2rem;
+  padding: 4px 13px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn--blue {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2198dc;
+  padding: 6px 30px;
+  border: 2px solid #2198dc;
+  border-radius: 40px;
+}
+
+.btn--blue:hover {
+  color: #2198dc;
+  background-color: #fff;
+  border-color: #2198dc;
+}
+
+@media screen and (max-width: 576px) {
+  .btn--blue {
+    font-size: 1.2rem;
+    padding: 6px 10px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .btn--blue {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .btn--blue {
+    font-size: 1.2rem;
+  }
+}
+
+.btn--white {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2198dc;
+  background-color: #fff;
+  padding: 6px 30px;
+  border: 2px solid #2198dc;
+  border-radius: 40px;
+}
+
+.btn--white:hover {
+  color: #fff;
+  background-color: #2198dc;
+  border-color: #2198dc;
+}
+
+@media screen and (max-width: 576px) {
+  .btn--white {
+    font-size: 1.2rem;
+    padding: 6px 10px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .btn--white {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .btn--white {
+    font-size: 1.2rem;
+  }
+}
+
+.btn--search {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2198dc;
+  background-color: transparent;
+  padding: 6px 30px;
+  border: 2px solid #2198dc;
+  border-radius: 40px;
+}
+
+.btn--search:hover {
+  color: #f1f1f1;
+  background-color: #2198dc;
+  border-color: #2198dc;
+}
+
+.navbar-toggler__config {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler__config:focus {
+  outline: none;
+}
+
+.navbar-toggler__config .toggle-button .bar {
+  height: 3px;
+  width: 30px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.navbar-toggler__config .toggle-button .bar:last-child {
+  margin-bottom: 0;
+}
+
+.navbar-toggler__config .toggle-button .bar-1.change {
+  transform: translateY(9px) rotate(-45deg);
+}
+
+.navbar-toggler__config .toggle-button .bar-2.change {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.navbar-toggler__config .toggle-button .bar-3.change {
+  transform: translateY(-9px) rotate(45deg);
+}
+
+.btn--explore {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff4040;
+  padding: 6px 15px;
+  border: 2px solid #ff4040;
+  border-radius: 40px;
+}
+
+.btn--explore:hover {
+  color: #ff4040;
+  background-color: #fff;
+  border-color: #ff4040;
+}
+
+.btn--build {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  padding: 6px 15px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+}
+
+.btn--build:hover {
+  color: #2198dc;
+  background-color: #fff;
+  border-color: #2198dc;
+}
+
+body {
+  position: relative;
+}
+
+body .back-to-top {
+  position: fixed;
+  right: -30px;
+  bottom: 25%;
+  z-index: 9999;
+  display: inline-block;
+  height: 45px;
+  width: 40px;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007cc3;
+  text-align: center;
+  font-size: 1.4rem;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+body .back-to-top:hover {
+  right: 0;
+  opacity: 1;
+}
+
+body .back-to-top .arrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+}
+
+body .back-to-top .bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22%;
+}
+
+.search__dropdown {
+  z-index: 101;
+  position: relative;
+}
+
+.search__dropdown.search--hide {
+  display: none;
+}
+
+.search__dropdown .search__content {
+  padding: 6px 50px;
+  background-color: #f1f1f1;
+}
+
+.search__dropdown .search__content .search__input {
+  flex-grow: 1;
+  color: #2198dc;
+}
+
+.search__dropdown .search__content .search__input i {
+  font-size: 1.8rem;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.search__dropdown .search__content .search__input input {
+  flex-grow: 1;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #2198dc;
+  height: 4.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search__dropdown .search__content .search__input input::placeholder {
+  color: #2198dc;
+}
+
+.search__dropdown::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #f1f1f1;
+}
+
+@media screen and (max-width: 1200px) {
+  #header #vehicle .container__config .vehicle__content .vehicle__navbar ul li a {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item h3 {
+    font-size: 1.4rem;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__detail h4 {
+    font-size: 1.8rem;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__detail p {
+    font-size: 1.4rem -0.2;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item button {
+    padding: 6px 15px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #our-vehicle #vehicle__slider .carousel-indicators--config {
+    width: 80%;
+    margin: auto;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config {
+    width: 40%;
+    top: 10%;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config p {
+    font-size: 1.4rem -0.2;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail h2 {
+    font-size: 2.4rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer {
+    bottom: 3%;
+    padding: 0 20px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a {
+    font-size: 1.2rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a i {
+    padding-left: 6px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer img {
+    width: 50%;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-prev {
+    left: -5px;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-next {
+    right: -5px;
+  }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1350px) {
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer {
+    bottom: 2%;
+    padding: 0 45px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a {
+    font-size: 1.2rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a i {
+    padding-left: 6px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+  #services .services__container--config {
+    padding: 60px 6.5%;
+  }
+  #services .services__container--config .service__item {
+    height: 300px;
+    padding: 30px 20px;
+  }
+  #services .services__container--config .service__item i {
+    font-size: 4rem;
+  }
+  #services .services__container--config .service__item h3 {
+    font-size: 1.4rem;
+  }
+  #services .services__container--config .service__item p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #discover-honda .discover__container--config h1 {
+    font-size: 5rem;
+  }
+  #discover-honda .discover__container--config .discover__item {
+    height: 400px;
+  }
+  #discover-honda .discover__container--config .discover__item .discover__item__content {
+    bottom: 12%;
+  }
+  #discover-honda .discover__container--config .discover__item .discover__item__content h3 {
+    padding: 0 15px;
+    font-size: 1.4rem;
+  }
+  #discover-honda .discover__container--config .discover__item .discover__item__content p {
+    font-size: 1.2rem;
+  }
+  #discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content {
+    top: 25%;
+  }
+  #discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content > p {
+    font-size: 1.2rem;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+  #footer #footer__brand {
+    padding: 15px 0;
+  }
+  #footer #footer__brand .footer__brand__copyright {
+    font-size: 1.3rem;
+  }
+  #footer #footer__brand .footer__brand__link {
+    margin: 10px 0;
+  }
+  #footer #footer__brand .footer__brand__link ul {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  #footer #footer__brand .footer__brand__link ul li {
+    padding: 0 6px;
+  }
+  #footer #footer__brand .footer__brand__link ul li a {
+    font-size: 1.2rem;
+  }
+  #footer #footer__brand .footer__brand__logo {
+    padding: 30px 30px 0;
+  }
+  #footer #footer__brand .footer__brand__logo img {
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #header #vehicle .container__config .vehicle__content .vehicle__navbar ul li a {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item h3 {
+    font-size: 1.4rem;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__detail h4 {
+    font-size: 1.8rem;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__detail p {
+    font-size: 1.4rem;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item button {
+    font-size: 1.2rem;
+    padding: 4px 20px;
+  }
+  #header .shopping__dropdown {
+    padding: 10px 20px 30px;
+  }
+  #header .shopping__dropdown .shopping__tools ul li a {
+    height: 80px;
+    width: 130px;
+    padding: 10px 10px 10px;
+  }
+  #header .shopping__dropdown .shopping__tools ul li a i {
+    font-size: 2.4rem;
+  }
+  #header .shopping__dropdown .shopping__tools ul li a p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  #header .shopping__dropdown .shopping__more {
+    padding-top: 20px;
+  }
+  #header .shopping__dropdown .shopping__more .shopping__more__item a {
+    font-size: 12px;
+  }
+  #header .owner__dropdown {
+    width: 40rem;
+  }
+  #header .owner__dropdown ul li a {
+    font-size: 12px;
+  }
+  #header .discover__dropdown {
+    width: 30rem;
+  }
+  #header .discover__dropdown .discover__link h3 {
+    font-size: 1.8rem;
+  }
+  #header .discover__dropdown .discover__link ul li a {
+    font-size: 14px;
+  }
+  #header .discover__dropdown .discover__social {
+    margin-top: 20px;
+  }
+  #header .discover__dropdown .discover__social i {
+    font-size: 12px;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #carousel {
+    height: 600px;
+  }
+  #carousel .swiper-config {
+    height: 400px;
+  }
+  #carousel .swiper-config .swiper-wrapper {
+    height: 82%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #carousel .swiper-config .swiper-pagination {
+    bottom: 40px;
+  }
+  #carousel .swiper-config .swiper-button-explore {
+    bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #carousel .swiper-config .swiper-button-config {
+    top: 50%;
+    padding: 45px 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #intro .intro__container .intro__left .intro__left__content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #intro .intro__container .intro__right {
+    background: url("../img/intro-2-xs.jpg") no-repeat center;
+    background-size: cover;
+    background-clip: content-box;
+  }
+  #intro .intro__container .intro__right .intro__right__content {
+    position: absolute;
+    width: 96%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4%;
+    text-align: center;
+    padding: 20px;
+  }
+  #intro .intro__container .intro__right .intro__right__content p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #our-vehicle h1 {
+    font-size: 5rem;
+    margin-bottom: 40px;
+  }
+  #our-vehicle #vehicle__slider .carousel-indicators--config {
+    width: 90%;
+    margin: auto;
+  }
+  #our-vehicle #vehicle__slider .carousel-indicators--config li span {
+    font-size: 1.2rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config {
+    width: 40%;
+    top: 10%;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config p {
+    font-size: 1.4rem -0.2;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail h2 {
+    font-size: 2.4rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer {
+    bottom: 5%;
+    border-top: none;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a {
+    font-size: 1.4rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a i {
+    padding-left: 6px;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-next i,
+  #our-vehicle #vehicle__slider .carousel-control-prev i {
+    font-size: 2.4rem;
+    padding: 15px;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-prev {
+    left: -5px;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-next {
+    right: -5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #services .services__container--config {
+    padding: 50px 6.5%;
+  }
+  #services .services__container--config .service__item:hover {
+    transform: unset;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #discover-honda .discover__container--config h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) and (max-width: 850px) {
+  #discover-honda .discover__container--config .discover__item {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #discover-honda .discover__container--config .discover__item .discover__item__content {
+    bottom: 12%;
+  }
+  #discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content {
+    top: 25%;
+  }
+  #discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content > p {
+    font-size: 1.2rem;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #footer #footer__menu .footer__menu__content {
+    flex-wrap: wrap;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item {
+    width: 25%;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  #footer #footer__menu .footer__menu__contact .footer__social i {
+    height: 25px;
+    width: 25px;
+    font-size: 1.2rem;
+    line-height: 25px;
+    margin-right: 3px;
+  }
+  #footer #footer__brand {
+    padding: 15px 0;
+  }
+  #footer #footer__brand .footer__brand__copyright {
+    font-size: 1.2rem;
+  }
+  #footer #footer__brand .footer__brand__link {
+    margin: 10px 0;
+  }
+  #footer #footer__brand .footer__brand__link ul {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  #footer #footer__brand .footer__brand__link ul li {
+    padding: 0 6px;
+  }
+  #footer #footer__brand .footer__brand__link ul li a {
+    font-size: 12px;
+  }
+  #footer #footer__brand .footer__brand__logo {
+    padding: 30px 30px 0;
+  }
+  #footer #footer__brand .footer__brand__logo img {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header #navbar a {
+    transition: none;
+    padding: 6px 15px;
+  }
+  #header #navbar #vehicle-link__xs {
+    border-left: 1px solid #4f91ca;
+    margin-right: auto;
+    font-weight: 500;
+  }
+  #header #navbar #vehicle-link__xs i {
+    font-size: 1.3rem;
+  }
+  #header #navbar #dealer-link {
+    font-size: 1.7rem;
+    padding: 6px;
+    border: none;
+  }
+  #header #navbar #dealer-link.active {
+    background-color: transparent;
+    color: #e74c3c;
+  }
+  #header #navbar .navbar-toggler__config {
+    margin-right: 15px;
+    padding: 10px 6px;
+  }
+  #header #navbar > a:not(.navbar-brand__config)::before,
+  #header #navbar .navbar-collapse__config .nav-link::before {
+    display: none;
+  }
+  #header #navbar > a:not(.navbar-brand__config).active,
+  #header #navbar .navbar-collapse__config .nav-link.active {
+    color: #007cc3;
+    background: #fff;
+  }
+  #header #navbar > a:not(.navbar-brand__config).active:hover,
+  #header #navbar .navbar-collapse__config .nav-link.active:hover {
+    color: #007cc3;
+  }
+  #header #navbar > a:not(.navbar-brand__config):hover,
+  #header #navbar .navbar-collapse__config .nav-link:hover {
+    color: #fff;
+  }
+  #header #navbar .navbar-collapse__config {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+  }
+  #header #navbar .navbar-collapse__config.navbar-collapse__config--hide {
+    display: none;
+  }
+  #header #navbar .navbar-collapse__config ul .nav-link {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00446a;
+    text-transform: uppercase;
+    padding: 14px 15px;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  #header #navbar .navbar-collapse__config ul .nav-link:hover {
+    color: #00446a;
+  }
+  #header #navbar .navbar-collapse__config ul .nav-link__language {
+    border: none;
+  }
+  #header #navbar .navbar-collapse__config ul .nav-link__language button {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-right: 5px;
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs {
+    padding: 15px;
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs form {
+    position: relative;
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs form i {
+    font-size: 1.2rem;
+    color: #2198dc;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs form input {
+    z-index: 0;
+    padding: 10px 0 10px 34px;
+    color: #2198dc;
+    border-radius: 40px;
+    border: none;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    font-size: 1.4rem;
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs form input::placeholder {
+    color: #2198dc;
+  }
+  #header #vehicle .container__config {
+    height: 100vh;
+  }
+  #header #vehicle .container__config .vehicle__content {
+    box-shadow: none;
+  }
+  #header #vehicle .container__config .vehicle__content .vehicle__navbar ul li {
+    margin-bottom: 5px;
+  }
+  #header #vehicle .container__config .vehicle__content .vehicle__navbar a {
+    transition: none;
+    font-size: 1.2rem;
+    border: none;
+  }
+  #header #vehicle .container__config .vehicle__content .vehicle__navbar a:hover::after {
+    display: none;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list {
+    max-height: 90vh;
+    padding: 15px 10px 30px;
+    background-color: #fff;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content {
+    padding: 15px;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 660px) and (max-width: 767px) {
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content .vehicle__item .vehicle__item__img img {
+    height: 214px;
+    width: auto;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title {
+    padding: 15px 0;
+    font-size: 1.4rem;
+    border-bottom: 0.2rem solid #e5e5e5;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title {
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title span {
+    font-weight: 600;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title .product__title__icon {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #2198dc;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title .product__title__icon i {
+    font-size: 1.2rem;
+    color: #2198dc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title:hover {
+    color: #00324f;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title[aria-expanded="true"] span {
+    color: #2198dc;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title[aria-expanded="true"] i::before {
+    content: "\f068";
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list #futureXs {
+    border-bottom: none;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product--collapse > div {
+    padding: 20px 0 0;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__item .vehicle__item__img img:first-child {
+    display: none;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__item .vehicle__item__img img:last-child {
+    display: block;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__item .vehicle__item__img:hover img:first-child {
+    display: none;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__item .vehicle__item__img:hover img:nth-child(2) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #carousel {
+    margin-top: 45px;
+    height: 650px;
+  }
+  #carousel .swiper-config {
+    height: 500px;
+  }
+  #carousel .swiper-config .swiper-wrapper {
+    height: 95%;
+  }
+  #carousel .swiper-config .swiper-pagination {
+    bottom: 0;
+  }
+  #carousel .swiper-config .swiper-button-explore {
+    bottom: 13%;
+  }
+  #carousel .swiper-config .swiper-button-config {
+    padding: 45px 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #intro .intro__container .intro__left {
+    bottom: 4%;
+    margin-top: -130px;
+  }
+  #intro .intro__container .intro__right {
+    margin-top: 20px;
+  }
+  #intro .intro__container .intro__right .intro__right__content h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  #intro .intro__container .intro__right .intro__right__content p {
+    font-size: 1.4rem;
+    width: 52%;
+  }
+  #intro .intro__container .intro__right .intro__right__content button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #our-vehicle {
+    padding-top: 30px;
+  }
+  #our-vehicle h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  #our-vehicle #vehicle__slider__navbar .vehicle-slide__navbar--config {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.044), 0 2.8px 2.4px rgba(0, 0, 0, 0.074), 0 6.6px 8.5px rgba(0, 0, 0, 0.109), 0 22px 43px rgba(0, 0, 0, 0.18);
+  }
+  #our-vehicle #vehicle__slider__navbar .vehicle-slide__navbar--config .carousel-item {
+    text-align: center;
+  }
+  #our-vehicle #vehicle__slider__navbar .vehicle-slide__navbar--config .carousel-item.active {
+    display: inline-block;
+  }
+  #our-vehicle #vehicle__slider__navbar .vehicle-slide__navbar--config .carousel-item span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00324f;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config {
+    margin-top: -20px;
+    padding-top: 0;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config {
+    width: 70%;
+    top: unset;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 700px) {
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config {
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config img {
+    width: 60%;
+    transform: translateX(0);
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail {
+    justify-content: center !important;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail .carousel__detail__content:first-child {
+    margin-right: 100px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail h2 {
+    font-size: 2.4rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail p {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__caption__button {
+    justify-content: center !important;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__caption__button button:first-child {
+    margin-right: 45px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer {
+    width: 100%;
+    bottom: 2%;
+    justify-content: center !important;
+    padding: 0 50px;
+    border-top: none;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a {
+    font-size: 14px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a i {
+    padding-left: 6px;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-next i,
+  #our-vehicle #vehicle__slider .carousel-control-prev i {
+    font-size: 2.4rem;
+    padding: 15px;
+    top: 41%;
+    transform: translateY(-50%);
+  }
+  #our-vehicle #vehicle__slider .carousel-control-prev {
+    left: 0;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-next {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #services .services__container--config {
+    padding: 35px 6.5%;
+  }
+  #services .services__container--config .service__item:hover {
+    transform: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #discover-honda .discover__container--config h1 {
+    font-size: 4rem;
+  }
+  #discover-honda .discover__container--config .discover__item .discover__item__content {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 700px) {
+  #discover-honda .discover__container--config .discover__item .discover__item__content {
+    bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #discover-honda .discover__container--config .discover__item .discover__item__content h3 {
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+  #discover-honda .discover__container--config .discover__item .discover__item__content p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  #discover-honda .discover__container--config .discover__item .discover__item-6 .item-6__twitter__content {
+    top: 25%;
+  }
+  #discover-honda .discover__search .search__content {
+    padding: 6px 30px;
+  }
+  #discover-honda .discover__search .search__content .search__input input {
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #footer {
+    padding-top: 0;
+    background-color: #fff;
+  }
+  #footer #footer__menu {
+    padding: 0;
+    background-color: #fff;
+    padding-top: 2px;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__title__xs {
+    margin-bottom: 2px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    cursor: pointer;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__title__xs h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00324f;
+    margin-bottom: 0;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__title__xs i {
+    color: #2198dc;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #2198dc;
+    border-radius: 50%;
+    line-height: 23px;
+    text-align: center;
+    background-color: #fff;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__title__xs[aria-expanded="true"] i::before {
+    content: "\f068";
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__link {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  #footer #footer__menu .footer__menu__contact {
+    margin: 30px 35px;
+  }
+  #footer #footer__brand {
+    padding: 15px 0;
+  }
+  #footer #footer__brand .footer__brand__copyright {
+    font-size: 1.2rem;
+  }
+  #footer #footer__brand .footer__brand__link {
+    margin: 10px 0;
+  }
+  #footer #footer__brand .footer__brand__link ul {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #footer #footer__brand .footer__brand__link ul li {
+    padding: 0 6px;
+  }
+  #footer #footer__brand .footer__brand__link ul li a {
+    font-size: 12px;
+  }
+  #footer #footer__brand .footer__brand__logo--xs img {
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #header #navbar a {
+    transition: none;
+    padding: 6px 15px;
+  }
+  #header #navbar #vehicle-link__xs {
+    border-left: 1px solid #4f91ca;
+    margin-right: auto;
+    font-weight: 500;
+  }
+  #header #navbar #vehicle-link__xs i {
+    font-size: 1.3rem;
+  }
+  #header #navbar #dealer-link {
+    font-size: 1.7rem;
+    padding: 6px;
+    border: none;
+  }
+  #header #navbar #dealer-link.active {
+    background-color: transparent;
+    color: #e74c3c;
+  }
+  #header #navbar .navbar-toggler__config {
+    margin-right: 10px;
+    padding: 10px 6px;
+  }
+  #header #navbar > a:not(.navbar-brand__config)::before,
+  #header #navbar .navbar-collapse__config .nav-link::before {
+    display: none;
+  }
+  #header #navbar > a:not(.navbar-brand__config).active,
+  #header #navbar .navbar-collapse__config .nav-link.active {
+    color: #007cc3;
+    background: #fff;
+  }
+  #header #navbar > a:not(.navbar-brand__config).active:hover,
+  #header #navbar .navbar-collapse__config .nav-link.active:hover {
+    color: #007cc3;
+  }
+  #header #navbar > a:not(.navbar-brand__config):hover,
+  #header #navbar .navbar-collapse__config .nav-link:hover {
+    color: #fff;
+  }
+  #header #navbar .navbar-collapse__config {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+  }
+  #header #navbar .navbar-collapse__config.navbar-collapse__config--hide {
+    display: none;
+  }
+  #header #navbar .navbar-collapse__config ul .nav-link {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00446a;
+    text-transform: uppercase;
+    padding: 14px 15px;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  #header #navbar .navbar-collapse__config ul .nav-link:hover {
+    color: #00446a;
+  }
+  #header #navbar .navbar-collapse__config ul .nav-link__language {
+    border: none;
+  }
+  #header #navbar .navbar-collapse__config ul .nav-link__language button {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-right: 5px;
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs {
+    padding: 15px;
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs form {
+    position: relative;
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs form i {
+    font-size: 1.2rem;
+    color: #2198dc;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs form input {
+    z-index: 0;
+    padding: 10px 0 10px 34px;
+    color: #2198dc;
+    border-radius: 40px;
+    border: none;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    font-size: 1.4rem;
+  }
+  #header #navbar .navbar-collapse__config ul #search__xs form input::placeholder {
+    color: #2198dc;
+  }
+  #header #vehicle .container__config {
+    height: 100vh;
+  }
+  #header #vehicle .container__config .vehicle__content {
+    box-shadow: none;
+  }
+  #header #vehicle .container__config .vehicle__content .vehicle__navbar ul li {
+    margin-bottom: 5px;
+  }
+  #header #vehicle .container__config .vehicle__content .vehicle__navbar a {
+    transition: none;
+    font-size: 1.2rem;
+    border: none;
+  }
+  #header #vehicle .container__config .vehicle__content .vehicle__navbar a:hover::after {
+    display: none;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list {
+    max-height: 90vh;
+    padding: 15px 10px 30px;
+    background-color: #fff;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) and (max-width: 400px) {
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__list__content {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title {
+    padding: 15px 0;
+    margin: 0 15px;
+    color: #00324f;
+    border-bottom: 0.2rem solid #e5e5e5;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title span {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title .product__title__icon {
+    height: 23px;
+    width: 23px;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title .product__title__icon i {
+    font-size: 1rem;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title:hover {
+    color: #00324f;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title[aria-expanded="false"] span {
+    color: #00324f;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title[aria-expanded="true"] span {
+    color: #2198dc;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product__title[aria-expanded="true"] i::before {
+    content: "\f068";
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list #futureXs {
+    border-bottom: none;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__product--collapse > div {
+    padding: 20px 0 0;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__item .vehicle__item__img img:first-child {
+    display: none;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__item .vehicle__item__img img:last-child {
+    display: block;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__item .vehicle__item__img:hover img:first-child {
+    display: none;
+  }
+  #header #vehicle .container__config .vehicle__content #vehicle__list .vehicle__item .vehicle__item__img:hover img:nth-child(2) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #carousel .swiper-config .swiper-button-config {
+    padding: 30px 20px;
+    outline: none;
+  }
+  #carousel .swiper-config .swiper-button-config::after {
+    font-size: 2.5rem;
+  }
+  #carousel .swiper-config .swiper-button-prev {
+    left: -0.3rem;
+  }
+  #carousel .swiper-config .swiper-button-next {
+    right: -0.3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #intro .intro__container .intro__right .intro__right__content {
+    padding-left: 10px;
+  }
+  #intro .intro__container .intro__right .intro__right__content h3 {
+    margin-bottom: 20px;
+  }
+  #intro .intro__container .intro__right .intro__right__content p {
+    font-size: 1.4rem;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 576px) and (max-width: 375px) {
+  #intro .intro__container .intro__right .intro__right__content {
+    bottom: 20%;
+  }
+  #intro .intro__container .intro__right .intro__right__content h3 {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  #intro .intro__container .intro__right .intro__right__content p {
+    font-size: 12px;
+    width: 45%;
+  }
+  #intro .intro__container .intro__right .intro__right__content button {
+    font-size: 9px;
+    padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #our-vehicle {
+    padding-top: 30px;
+  }
+  #our-vehicle h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  #our-vehicle #vehicle__slider__navbar .vehicle-slide__navbar--config .carousel-item span {
+    font-size: 14px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config {
+    width: 70%;
+    top: unset;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config h3 {
+    font-size: 1.2rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config img {
+    width: 90%;
+    transform: translateX(0);
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail h2 {
+    font-size: 2.4rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__detail p {
+    font-size: 12px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__caption__button {
+    width: 100%;
+    justify-content: center !important;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption--config .carousel__caption__button button:first-child {
+    margin-right: 20px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer {
+    width: 100%;
+    bottom: 2%;
+    padding: 0 50px;
+    border-top: none;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a {
+    font-size: 14px;
+  }
+  #our-vehicle #vehicle__slider .carousel-inner--config .carousel-item .carousel__caption__footer a i {
+    padding-left: 6px;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-prev {
+    left: 0.5rem;
+  }
+  #our-vehicle #vehicle__slider .carousel-control-next {
+    right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #services .services__container--config {
+    padding: 20px 6.5%;
+  }
+  #services .services__container--config .service__item:hover {
+    transform: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #discover-honda .discover__container--config h1 {
+    font-size: 3rem;
+  }
+  #discover-honda .discover__container--config .discover__item {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) and (max-width: 500px) {
+  #discover-honda .discover__container--config .discover__item .discover__item__content {
+    bottom: 14.5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #discover-honda .discover__container--config .discover__item .discover__item__content h3 {
+    padding: 0 15px;
+  }
+  #discover-honda .discover__container--config .discover__item .discover__item__content p {
+    font-size: 1.2rem;
+  }
+  #discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content {
+    top: 25%;
+  }
+  #discover-honda .discover__container--config .discover__item-6 .item-6__twitter__content > p {
+    font-size: 1.3rem;
+    padding-right: 15px;
+  }
+  #discover-honda .discover__search .search__content {
+    padding: 6px 30px;
+  }
+  #discover-honda .discover__search .search__content .search__input input {
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #footer {
+    padding-top: 0;
+    background-color: #fff;
+  }
+  #footer #footer__menu {
+    padding: 0;
+    background-color: #fff;
+    padding-top: 2px;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__title__xs {
+    margin-bottom: 2px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    cursor: pointer;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__title__xs h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00324f;
+    margin-bottom: 0;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__title__xs i {
+    color: #2198dc;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #2198dc;
+    border-radius: 50%;
+    line-height: 23px;
+    text-align: center;
+    background-color: #fff;
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__title__xs[aria-expanded="true"] i::before {
+    content: "\f068";
+  }
+  #footer #footer__menu .footer__menu__content .footer__menu__item .footer__link {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  #footer #footer__menu .footer__menu__contact {
+    margin: 30px 25px;
+  }
+  #footer #footer__menu .footer__menu__contact .footer__social {
+    margin-bottom: 10px;
+  }
+  #footer #footer__menu .footer__menu__contact .footer__social i {
+    height: 22px;
+    width: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    margin-right: 3px;
+  }
+  #footer #footer__brand {
+    padding: 15px 0;
+  }
+  #footer #footer__brand .footer__brand__copyright {
+    font-size: 1.2rem;
+  }
+  #footer #footer__brand .footer__brand__link {
+    margin: 10px 0;
+  }
+  #footer #footer__brand .footer__brand__link ul {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #footer #footer__brand .footer__brand__link ul li {
+    padding: 0 6px;
+    text-align: center;
+  }
+  #footer #footer__brand .footer__brand__link ul li a {
+    font-size: 12px;
+  }
+  #footer #footer__brand .footer__brand__logo--xs img {
+    height: 3.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

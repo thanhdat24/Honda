@@ -1,0 +1,185 @@
+#header {
+  #vehicle {
+    display: block;
+    &.vehicle--hide {
+      display: none;
+    }
+    .container__config {
+      padding: 0 6.3% 10px;
+      background-color: $color-blue-overlay;
+      .vehicle__content {
+        position: relative;
+        box-shadow: 0 9px 15px -5px rgba(0, 0, 0, 0.147),
+          0 15px 20px -10px rgba(0, 0, 0, 0.33);
+        .vehicle__navbar {
+          text-align: center;
+          ul {
+            margin: 0;
+            list-style: none;
+            padding: $pd-3 0;
+            background-color: $color-white;
+            li {
+              display: inline-block;
+              &:last-child a {
+                border: none;
+              }
+            }
+          }
+          a {
+            @include text(
+              $font-size-1,
+              $font-weight-bold,
+              $color-dark-blue-100
+            );
+            padding: $pd-1 $pd-4;
+            border-right: $border-2;
+            text-align: center;
+            position: relative;
+            transition: all 0.4s;
+            &.active {
+              color: $color-blue-200;
+              &::after {
+                width: 90%;
+                background-color: $color-blue-200;
+              }
+            }
+            &::after {
+              content: "";
+              height: 3px;
+              width: 0;
+              background-color: $color-blue-200;
+              display: inline-block;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              transition: width 0.4s;
+            }
+            &:hover {
+              text-decoration: none;
+              color: $color-blue-200;
+              &::after {
+                width: 90%;
+                background-color: $color-blue-200;
+              }
+            }
+          }
+        }
+
+        .vehicle__content--close {
+          padding: $pd-2 - 5;
+          color: $color-dark-blue-100;
+          background-color: $color-grey;
+          border-radius: 0 10px 10px 0;
+          position: absolute;
+          top: 65px;
+          right: -55px;
+          cursor: pointer;
+          .close-icon {
+            height: 30px;
+            width: 30px;
+            border: 2px solid $color-dark-blue-100;
+            border-radius: 50%;
+            margin: auto;
+            i {
+              font-size: $font-size-1 - 0.2;
+              line-height: 26px;
+            }
+          }
+          p {
+            font-size: $font-size-1;
+            font-weight: $font-weight-bold;
+            margin: 0;
+          }
+          &:hover {
+            color: $color-blue-200;
+            .close-icon {
+              border-color: $color-blue-200;
+            }
+          }
+        }
+
+        #vehicle__list {
+          background-color: $color-grey;
+          padding: $pd-5;
+          margin: 0;
+          max-height: 85vh;
+          .vehicle__list__content {
+            padding: $pd-2 $pd-2 $pd-2 $pd-4;
+            .vehicle__title {
+              h1 {
+                @include text(
+                  $font-size-3,
+                  $font-weight-bold,
+                  $color-dark-blue-200
+                );
+                position: relative;
+                background-color: $color-grey;
+                padding: 0 $pd-1;
+                top: -2.7rem;
+                i {
+                  font-size: $font-size-1 - 0.2;
+                  position: relative;
+                  top: -4px;
+                }
+                span {
+                  font-weight: $font-weight-300;
+                }
+              }
+            }
+            .vehicle__item {
+              margin-bottom: $mg-5;
+              .vehicle__item--shadow {
+                padding-bottom: $pd-4;
+                border-radius: 5px;
+                box-shadow: $box-shadow-3;
+              }
+              .vehicle__item__img {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+              }
+              & img:nth-child(2) {
+                display: none;
+              }
+              &:hover {
+                & img:first-child {
+                  display: none;
+                }
+                & img:nth-child(2) {
+                  display: block;
+                }
+              }
+              h3 {
+                @include text(
+                  $font-size-2,
+                  $font-weight-bold,
+                  $color-dark-blue-200
+                );
+                margin-bottom: $mg-1;
+              }
+              .vehicle__detail {
+                margin-bottom: $mg-2;
+                h4 {
+                  @include text(
+                    $font-size-3,
+                    $font-weight-normal,
+                    $color-dark-blue-200
+                  );
+                }
+                p {
+                  @include text(
+                    $font-size-1,
+                    $font-weight-normal,
+                    $color-dark-blue-100
+                  );
+                  margin-bottom: $mg-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

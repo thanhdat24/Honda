@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+  font-size: $font-size-html;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $color-dark-blue-200;
+  .container-fluid--config {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

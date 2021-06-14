@@ -1,0 +1,316 @@
+#header {
+  @media screen and (max-width: 992px) {
+    #vehicle {
+      .container__config {
+        .vehicle__content {
+          .vehicle__navbar {
+            ul {
+              li {
+                a {
+                  font-size: $font-size-1 - 0.2;
+                  padding: $pd-1 $pd-1 + 4;
+                }
+              }
+            }
+          }
+
+          #vehicle__list {
+            .vehicle__list__content {
+              .vehicle__item {
+                h3 {
+                  font-size: $font-size-1;
+                }
+                .vehicle__detail {
+                  h4 {
+                    font-size: $font-size-2;
+                  }
+                  p {
+                    font-size: $font-size-1;
+                  }
+                }
+                button {
+                  font-size: $font-size-1 - 0.2;
+                  padding: $pd-1 - 2 $pd-3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .shopping__dropdown {
+      padding: $pd-2 - 5 $pd-3 $pd-5;
+      .shopping__tools {
+        ul {
+          li {
+            a {
+              height: 80px;
+              width: 130px;
+              padding: $pd-2 - 5 $pd-2 - 5 $pd-2 - 5;
+              i {
+                font-size: $font-size-3;
+              }
+              p {
+                font-size: $font-size-html;
+                margin-top: $mg-2 - 5;
+              }
+            }
+          }
+        }
+      }
+      .shopping__more {
+        padding-top: $pd-3;
+        .shopping__more__item {
+          a {
+            font-size: $font-size-html;
+          }
+        }
+      }
+    }
+    .owner__dropdown {
+      width: 40rem;
+      ul {
+        li {
+          a {
+            font-size: $font-size-html;
+          }
+        }
+      }
+    }
+    .discover__dropdown {
+      width: 30rem;
+      .discover__link {
+        h3 {
+          font-size: $font-size-2;
+        }
+        ul {
+          li {
+            a {
+              font-size: $font-size-html + 2;
+            }
+          }
+        }
+      }
+      .discover__social {
+        margin-top: $mg-2;
+        i {
+          font-size: $font-size-html;
+          height: 25px;
+          width: 25px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+#carousel {
+  @media screen and (max-width: 992px) {
+    height: 600px;
+    .swiper-config {
+      height: 400px;
+      .swiper-wrapper {
+        height: 82%;
+      }
+      @media screen and (min-width: 768px) {
+        .swiper-pagination {
+          bottom: 40px;
+        }
+        .swiper-button-explore {
+          bottom: 25%;
+        }
+      }
+      .swiper-button-config {
+        top: 50%;
+        padding: $pd-6 - 5 $pd-3 + 5;
+      }
+    }
+  }
+}
+
+#intro {
+  @media screen and (max-width: 992px) {
+    .intro__container {
+      .intro__left {
+        .intro__left__content {
+          p {
+            font-size: $font-size-1 - 0.2;
+            margin-bottom: $mg-2;
+          }
+        }
+      }
+      .intro__right {
+        @media screen and (min-width: 768px) {
+          background: url("../img/intro-2-xs.jpg") no-repeat center;
+          background-size: cover;
+          background-clip: content-box;
+          .intro__right__content {
+            position: absolute;
+            width: 96%;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 4%;
+            text-align: center;
+            padding: $pd-3;
+            p {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#our-vehicle {
+  @media screen and (max-width: 992px) {
+    h1 {
+      font-size: $font-size-5 + 1;
+      margin-bottom: $mg-4 - 5;
+    }
+    #vehicle__slider {
+      .carousel-indicators--config {
+        width: 90%;
+        margin: auto;
+        li {
+          span {
+            font-size: $font-size-1 - 0.2;
+          }
+        }
+      }
+      .carousel-inner--config {
+        .carousel-item {
+          .carousel__caption--config {
+            width: 40%;
+            top: 10%;
+
+            p {
+              font-size: $font-size-1 -0.2;
+            }
+            .carousel__detail {
+              h2 {
+                font-size: $font-size-3;
+              }
+            }
+          }
+          .carousel__caption__footer {
+            bottom: 5%;
+            border-top: none;
+            a {
+              font-size: $font-size-1;
+              i {
+                padding-left: $pd-1;
+              }
+            }
+          }
+        }
+      }
+      .carousel-control-next,
+      .carousel-control-prev {
+        i {
+          font-size: $font-size-3;
+          padding: $pd-2;
+        }
+      }
+      .carousel-control-prev {
+        left: -5px;
+      }
+      .carousel-control-next {
+        right: -5px;
+      }
+    }
+  }
+}
+
+#services {
+  @media screen and (max-width: 992px) {
+    .services__container--config {
+      padding: $pd-6 6.5%;
+      .service__item {
+        &:hover {
+          transform: unset;
+        }
+      }
+    }
+  }
+}
+
+#discover-honda {
+  @media screen and (max-width: 992px) {
+    .discover__container--config {
+      h1 {
+        font-size: $font-size-5;
+      }
+      .discover__item {
+        @media screen and (min-width: 768px) and(max-width: 850px) {
+          height: 430px;
+        }
+        .discover__item__content {
+          bottom: 12%;
+        }
+      }
+      .discover__item-6 {
+        .item-6__twitter__content {
+          top: 25%;
+          & > p {
+            font-size: $font-size-1 - 0.2;
+            padding-right: $pd-2;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    #footer__menu {
+      .footer__menu__content {
+        flex-wrap: wrap;
+        .footer__menu__item {
+          width: 25%;
+          & > h3 {
+            font-size: $font-size-1 + 0.1;
+            margin-bottom: $mg-2;
+          }
+        }
+      }
+      .footer__menu__contact {
+        .footer__social {
+          i {
+            height: 25px;
+            width: 25px;
+            font-size: $font-size-1 - 0.2;
+            line-height: 25px;
+            margin-right: $mg-1 - 2;
+          }
+        }
+      }
+    }
+    #footer__brand {
+      padding: $pd-2 0;
+      .footer__brand__copyright {
+        font-size: $font-size-1 - 0.2;
+      }
+      .footer__brand__link {
+        margin: $mg-1 + 5 0;
+        ul {
+          justify-content: flex-end;
+          width: 100%;
+          li {
+            padding: 0 $pd-1;
+            a {
+              font-size: $font-size-html;
+            }
+          }
+        }
+      }
+      .footer__brand__logo {
+        padding: $pd-5 $pd-5 0;
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}

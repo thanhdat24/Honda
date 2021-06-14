@@ -1,0 +1,93 @@
+#footer {
+  padding-top: $pd-5;
+  background-color: $color-grey;
+  box-sizing: content-box;
+  #footer__menu {
+    padding: 0 6.5% $pd-6;
+    .footer__menu__item {
+      .footer__title__md {
+        @include text($font-size-2, $font-weight-bold, $color-dark-blue-200);
+        margin-bottom: $mg-3;
+      }
+      ul {
+        li {
+          margin-bottom: $mg-2;
+          a {
+            @include text($font-size-1, $font-weight-normal, $color-blue-200);
+          }
+        }
+      }
+    }
+    .footer__menu__contact {
+      padding: $pd-3 0;
+      margin-top: $mg-3;
+      border-top: $border-2;
+      .footer__social {
+        h3 {
+          @include text($font-size-2, $font-weight-bold, $color-dark-blue-200);
+          margin-bottom: $mg-3;
+        }
+        i {
+          height: 30px;
+          width: 30px;
+          text-align: center;
+          font-size: $font-size-1;
+          color: $color-white;
+          background-color: $color-blue-100;
+          border-radius: 50%;
+          line-height: 30px;
+          margin-right: $mg-1;
+          margin-top: $mg-1;
+        }
+      }
+      .footer__form {
+        text-align: right;
+        h3 {
+          @include text(
+            $font-size-1,
+            $font-weight-normal,
+            $color-dark-blue-200
+          );
+          margin-bottom: $mg-2;
+        }
+      }
+    }
+  }
+  #footer__brand {
+    background-color: $color-blue-100;
+    padding: $pd-2 0;
+    .footer__brand__copyright {
+      @include text($font-size-1, $font-weight-normal, $color-white);
+      a {
+        font-style: italic;
+        text-decoration: underline;
+        color: $color-white;
+      }
+    }
+    .footer__brand__link {
+      margin-bottom: 0;
+      ul {
+        justify-content: flex-end;
+        li {
+          display: inline-block;
+          padding: 0 $pd-2;
+          &:not(:last-child) {
+            border-right: 1px solid $color-white;
+          }
+          a {
+            @include text($font-size-1, $font-weight-normal, $color-white);
+          }
+        }
+      }
+    }
+    .footer__brand__logo {
+      padding: $pd-5 $pd-5 0;
+      width: 100%;
+      img {
+        display: inline-block;
+        height: 4rem;
+        width: auto;
+      }
+    }
+  }
+}

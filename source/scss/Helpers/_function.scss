@@ -1,0 +1,87 @@
+// Add colored products' background
+@each $img, $color in (1, #3c4c5c), (2, #5e5e5e), (3, #14409a), (4, #99454d),
+  (5, #5e5e5e)
+{
+  #vehicle__list {
+    .vehicle__item {
+      #img-#{$img} {
+        background: linear-gradient(#bbbdc0, $color-grey);
+        border-radius: 5px;
+      }
+      &:hover {
+        #img-#{$img} {
+          background: linear-gradient($color, $color-grey, $color-grey);
+        }
+      }
+      &.delay-#{$img} {
+        animation-delay: 0.1s * $img;
+      }
+    }
+  }
+}
+
+@each $img in (1, 2, 3, 4, 5, 6) {
+  .delay-#{$img} {
+    animation-delay: 0.1s * $img;
+  }
+}
+
+@each $index in (1, 2, 3, 4) {
+  #carousel {
+    .swiper-config {
+      .slide-#{$index} {
+        background: url("../img/banner-#{$index}.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .swiper-config {
+        .slide-#{$index} {
+          background: url("../img/banner-#{$index}-xs.jpg") no-repeat center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@each $index in (1, 2, 3, 4, 5) {
+  #vehicle__slider {
+    .carousel-inner--config {
+      .item-#{$index} {
+        background: url("../img/slider-#{$index}.jpg") no-repeat center;
+        background-size: cover;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .carousel-inner--config {
+        .item-#{$index} {
+          background: url("../img/slider-#{$index}-xs.jpg") no-repeat;
+          background-position: unset;
+          background-size: cover;
+        }
+      }
+    }
+    @media screen and (max-width: 576px) {
+      .carousel-inner--config {
+        .item-#{$index} {
+          background: url("../img/slider-#{$index}-xs.jpg") no-repeat center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@each $index, $src in (1, "discover-1.jpg"), (2, "discover-2.jpg"),
+  (3, "discover-3.jpg"), (4, "discover-4.jpg"), (5, "discover-5.jpg")
+{
+  #discover-honda {
+    .discover__container--config {
+      .discover__item-#{$index} {
+        background: url("../img/#{$src}") no-repeat center 0;
+        background-size: 120%;
+      }
+    }
+  }
+}

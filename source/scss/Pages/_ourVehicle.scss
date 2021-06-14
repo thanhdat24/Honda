@@ -1,0 +1,140 @@
+#our-vehicle {
+  background-color: $color-grey;
+  padding-top: $pd-6;
+
+  h1 {
+    text-align: center;
+    @include text($font-size-4 - 0.5, $font-weight-300, $color-dark-blue-100);
+    margin-bottom: $mg-5;
+  }
+  #vehicle__slider {
+    height: 600px;
+    overflow: hidden;
+    .carousel-indicators--config {
+      top: 0;
+      bottom: unset;
+      width: 70%;
+      height: 3.5rem;
+      margin-bottom: 0;
+      li {
+        color: $color-dark-blue-100;
+        text-indent: unset;
+        opacity: 1;
+        width: unset;
+        height: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-grey;
+        position: relative;
+        &.active::before {
+          content: "";
+          border-left: $arrow-width solid transparent;
+          border-right: $arrow-width solid transparent;
+          border-top: $arrow-width solid $color-grey;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -4rem;
+        }
+        span {
+          @include text($font-size-1, $font-weight-bold, $color-dark-blue-200);
+          padding: $pd-1 $pd-2;
+          border-radius: 40px;
+        }
+        &.active {
+          span {
+            background-color: $color-blue-200;
+            color: $color-white;
+          }
+        }
+      }
+    }
+    .carousel-inner--config {
+      height: 95%;
+      padding-top: $pd-2;
+      margin-top: $mg-4 + 5;
+      .carousel-item {
+        height: 95%;
+        position: relative;
+        .carousel__caption--config {
+          width: 30%;
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          color: $color-white;
+          font-size: $font-size-1;
+          h3 {
+            margin-bottom: $mg-2;
+            span {
+              font-weight: $font-weight-300;
+            }
+          }
+          img {
+            width: 60%;
+            transform: translateX(-5px);
+          }
+          p {
+            margin-bottom: $mg-3;
+          }
+          .carousel__detail {
+            h2 {
+              font-size: $font-size-5;
+              font-weight: $font-weight-300;
+              margin-bottom: $mg-1 + 5;
+            }
+            p {
+              font-weight: $font-weight-bold;
+            }
+          }
+          .carousel__caption__button {
+            width: 100%;
+            & button:first-child {
+              margin-right: $mg-3;
+            }
+          }
+        }
+        .carousel__caption__footer {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50%;
+          padding: 0 $pd-6;
+          border-top: 1px solid $color-grey-2;
+          a {
+            font-size: $font-size-1;
+            color: $color-white;
+            font-weight: $font-weight-bold;
+            text-decoration: none;
+            i {
+              padding-left: $pd-2;
+            }
+          }
+        }
+      }
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      width: 5%;
+      i {
+        font-size: $font-size-5;
+        padding: $pd-2;
+        background-color: $color-blue-overlay;
+        position: absolute;
+        top: 50%;
+      }
+    }
+    .carousel-control-prev {
+      left: -1.5rem;
+      i {
+        border-radius: 0 0.9rem 0.9rem 0;
+      }
+    }
+    .carousel-control-next {
+      right: -1.5rem;
+      i {
+        border-radius: 0.9rem 0 0 0.9rem;
+      }
+    }
+  }
+}

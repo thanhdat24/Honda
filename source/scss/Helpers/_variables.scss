@@ -1,0 +1,79 @@
+// COLOR
+$color-white: #fff;
+$color-dark-white: #ffffffe6;
+$color-blue-100: #007cc3;
+$color-blue-200: #2198dc;
+$color-blue-overlay: rgba(8, 67, 108, 0.8);
+$color-dark-blue-100: #00446a;
+$color-dark-blue-200: #00324f;
+$color-orange: #ff4040;
+$color-orange-1: #e74c3c;
+$color-black: #000;
+$color-grey: #f5f5f5;
+$color-grey-1: #babcbf;
+$color-grey-2: #a8a7a7;
+$color-grey-3: #c4c4c4;
+$color-grey-4: #f1f1f1;
+$color-grey-5: #eee;
+$color-grey-6: rgba(0, 0, 0, 0.15);
+
+// FONT SIZE
+$font-size-html: 12px;
+$font-size-1: 1.4rem;
+$font-size-2: 1.8rem;
+$font-size-3: 2.4rem;
+$font-size-4: 6rem;
+$font-size-5: 4rem;
+
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-300: 300;
+$font-weight-500: 500;
+$font-weight-600: 600;
+
+// PADDING - MARGIN
+$pd-1: 6px;
+$pd-2: 15px;
+$pd-3: 20px;
+$pd-4: 25px;
+$pd-5: 30px;
+$pd-6: 50px;
+$pd-7: 10%;
+$pd-8: 5%;
+$pd-9: 10px;
+$pd-10: 35px;
+
+$mg-up: -200px;
+$mg-up-1: -2.7rem;
+$mg-up-2: -5px;
+$mg-1: 5px;
+$mg-2: 20px;
+$mg-3: 30px;
+$mg-4: 45px;
+$mg-5: 60px;
+$mg-6: 100px;
+
+// BORDER
+$border-1: 1px solid #4f91ca;
+$border-2: 0.2rem solid #e5e5e5;
+$border-3: 1px solid #a8a7a7;
+$border-4: 1px solid #e5e5e5;
+
+// SIZE
+$vehicles-close-width: 60px;
+$vehicles-circle-size: 25px;
+
+// SHADOW
+$box-shadow: 1px 20px 70px -10px;
+$box-shadow-2: 0 5px 5px 0 rgba(8, 29, 42, 0.08);
+$box-shadow-3: 9px 9px 11.6px -5px rgba(0, 0, 0, 0.047),
+  5px 12px 20px -10px rgba(0, 0, 0, 0.23);
+$box-shadow-4: 0 0.8px 2.1px rgba(0, 0, 0, 0.095),
+  0 2.7px 7.1px rgba(0, 0, 0, 0.171), 0 12px 32px rgba(0, 0, 0, 0.32);
+$box-shadow-5: 0 1px 0.5px rgba(0, 0, 0, 0.044),
+  0 2.8px 2.4px rgba(0, 0, 0, 0.074), 0 6.6px 8.5px rgba(0, 0, 0, 0.109),
+  0 22px 43px rgba(0, 0, 0, 0.18);
+$box-shadow-6: 0 0.8px 2.1px rgba(33, 152, 220, 0.1),
+  0 2.7px 7.1px rgba(33, 152, 220, 0.2), 0 12px 32px rgba(33, 152, 220, 0.35);
+
+$arrow-width: 15px;

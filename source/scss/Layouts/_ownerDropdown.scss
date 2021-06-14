@@ -1,0 +1,35 @@
+#header {
+  .owner__dropdown {
+    &.owner--hide {
+      display: none;
+    }
+    width: 45rem;
+    position: absolute;
+    top: 100%;
+    right: 52px;
+    background-color: $color-white;
+    box-shadow: $box-shadow-5;
+    padding: $pd-5 + 6 0;
+    .owner__content {
+      width: 45%;
+      padding: 0 $pd-5 + 5;
+      &:first-child {
+        width: 55%;
+        border-right: 1px solid $color-grey-3;
+      }
+    }
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        margin-bottom: $mg-2 - 3;
+      }
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include text($font-size-1 - 0.2, $font-weight-bold, $color-blue-100);
+      }
+    }
+  }
+}
